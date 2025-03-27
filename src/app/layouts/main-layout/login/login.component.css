@@ -1,0 +1,25 @@
+.background {
+    background-image: url('../../../../assets/images/login-gb.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust as needed */
+    padding-top: 10%;
+  }
+  .log-box{
+    border: 1px solid #c6c6c6;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    padding-bottom: 5%;
+    background: #ffffff17;
+  }
+  .log-box h3{
+    margin: 0px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .log-box input{
+    color: white;
+  }
