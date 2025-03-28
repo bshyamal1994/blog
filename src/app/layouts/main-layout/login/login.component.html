@@ -2,19 +2,19 @@
   <!-- Your content here -->
   <div class="log-box">
     <div>
-      <h3>Login</h3>
+      <h3>Login 3</h3>
     </div>
-    <form>
+    <form (ngSubmit)="onSubmit()">
       <div class="mt-20">
         <mat-form-field appearance="fill" appearance="outline" style="width: 100%;">
           <mat-label>Email</mat-label>
-          <input matInput type="email" required>
+          <input matInput type="email" name="email" [(ngModel)]="formData.email" required>
         </mat-form-field>
       </div>
       <div>
         <mat-form-field appearance="fill" appearance="outline" style="width: 100%;">
           <mat-label>Password</mat-label>
-          <input matInput type="password" required>
+          <input matInput type="password" name="password" [(ngModel)]="formData.password" required>
           
         </mat-form-field>
         <a class="text-light">Forgot password ?</a>
