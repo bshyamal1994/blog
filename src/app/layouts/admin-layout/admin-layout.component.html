@@ -1,4 +1,49 @@
 <div class="admin-layout">
+    <mat-drawer-container style="height: 100vh;">
+        <mat-drawer mode="side" opened class="sidenav">
+          <div class="nav-hdr">
+          </div>
+          <div class="menu-list">
+            <a routerLink="/admin"> <mat-icon>home</mat-icon>
+              Dashboard
+            </a>
+            <a routerLink="/admin/add-post"> <mat-icon>music_note</mat-icon>
+              Add Music
+            </a>
+            <a> <mat-icon>library_music</mat-icon>
+              List Music
+            </a>
+            <a> <mat-icon>list_alt</mat-icon>
+              Orders
+            </a>
+            <a> <mat-icon>summarize</mat-icon>
+              Report
+            </a>
+          </div>
+        </mat-drawer>
+        <mat-drawer-content>
+          <mat-toolbar class="main-nav">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+            <span>Dashboard</span>
+            <span class="example-spacer"></span>
+      
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+              <mat-icon>notifications</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+              <mat-icon>settings</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+              <mat-icon>logout</mat-icon>
+            </button>
+          </mat-toolbar>
+
+          <router-outlet></router-outlet>
+
+        </mat-drawer-content>
+      </mat-drawer-container>
+
     
-    <router-outlet></router-outlet>
 </div>

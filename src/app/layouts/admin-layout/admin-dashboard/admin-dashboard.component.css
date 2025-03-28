@@ -1,0 +1,41 @@
+.example-container {
+    width: auto;
+    height: 100%;
+
+   
+    /* The background property is added to clearly distinguish the borders between drawer and main
+       content */
+    background: #eee;
+  }
+  .sidenav{
+    height: 100%;
+    background: #262d34;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .nav-hdr{
+    height: 100px;
+    background: #777f887d;
+  }
+
+  .menu-list a .mat-icon{ height: 19px; }
+  .menu-list a{
+    color: white;
+    padding-top: 11px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    border: 1px solid;
+    line-height: 20px;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .main-nav{
+    background: #00000033;
+    box-shadow: 1px 3px 8px #838080;
+  }
+  .mat-drawer.mat-drawer-opened.mat-drawer-opened{
+    border-radius: 0px;
+  }
